@@ -590,7 +590,7 @@
             <objects>
                 <tableViewController id="hDQ-xa-NlX" customClass="FriendsViewController" customModule="Austin_Tall_Community" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="BG6-SA-t6C">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
@@ -619,7 +619,7 @@
         <!--Friends List-->
         <scene sceneID="IFi-0M-mst">
             <objects>
-                <viewController id="Qiq-Gq-L8q" sceneMemberID="viewController">
+                <viewController id="Qiq-Gq-L8q" customClass="FriendsListViewController" customModule="Austin_Tall_Community" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="q3I-oc-xKa"/>
                         <viewControllerLayoutGuide type="bottom" id="mCh-S6-gnC"/>
@@ -629,10 +629,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="KMZ-QC-ZPD">
-                                <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                                <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                                 <subviews>
                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KQ0-jc-tra">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
                                         <connections>
                                             <segue destination="hDQ-xa-NlX" kind="embed" id="0mW-Nb-ajc"/>
                                         </connections>
@@ -1180,7 +1180,7 @@
             <objects>
                 <tableViewController storyboardIdentifier="segue" id="Pia-9b-Ue5" customClass="PeoplezProfilesViewController" customModule="Austin_Tall_Community" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="0EK-U4-t7q">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <sections>
@@ -1468,7 +1468,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="FRi-vH-Yli">
                                 <rect key="frame" x="0.0" y="20" width="320" height="443.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Austin Tall Community" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0oe-Yk-B0z">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Austin Programmer Community" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0oe-Yk-B0z">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="155" id="Cmp-Um-R1h"/>
@@ -1854,7 +1854,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lRR-hK-b6c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1331.25" y="1026.875"/>
+            <point key="canvasLocation" x="-581" y="1034"/>
         </scene>
         <!--Edit Profile-->
         <scene sceneID="wK7-z3-15U">
@@ -2404,11 +2404,11 @@
                         <viewControllerLayoutGuide type="bottom" id="QES-I3-aRb"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="G7J-Vd-YDo">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="interactive" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="30" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="urB-VK-8GF">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Sender" id="HGa-7o-KvY" customClass="SenderCell" customModule="Austin_Tall_Community" customModuleProvider="target">
@@ -3228,7 +3228,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enable notifications so that you can get updates about messages from your friends, and more! " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hyr-bi-HQk">
-                                        <rect key="frame" x="0.0" y="170" width="320" height="90"/>
+                                        <rect key="frame" x="0.0" y="170" width="320" height="277"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="277" id="ofu-mg-Plc"/>
                                         </constraints>
@@ -3237,17 +3237,17 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uhc-Hb-Hrk">
-                                        <rect key="frame" x="0.0" y="260" width="320" height="200"/>
+                                        <rect key="frame" x="0.0" y="447" width="320" height="13"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w4M-hD-FN4">
-                                                <rect key="frame" x="0.0" y="0.0" width="160" height="200"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="160" height="13"/>
                                                 <state key="normal" title="Skip"/>
                                                 <connections>
                                                     <action selector="skipzor:" destination="9o2-Fb-gXT" eventType="touchUpInside" id="S7l-VY-b9i"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j3T-ml-rIu">
-                                                <rect key="frame" x="160" y="0.0" width="160" height="200"/>
+                                                <rect key="frame" x="160" y="0.0" width="160" height="13"/>
                                                 <state key="normal" title="Enable"/>
                                                 <connections>
                                                     <action selector="enabledz:" destination="9o2-Fb-gXT" eventType="touchUpInside" id="Yso-YK-gcI"/>
@@ -4418,10 +4418,10 @@ WQAAAAAAAAAAAAAAAAAAswM
         <image name="twitter-logo_318-40209" width="626" height="626"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="NE2-gx-DSE"/>
-        <segue reference="JWG-A4-pc7"/>
-        <segue reference="ubP-Sk-osR"/>
-        <segue reference="qzi-eF-TSu"/>
+        <segue reference="v2D-Vy-8Q4"/>
+        <segue reference="SxV-hB-5Gl"/>
+        <segue reference="1x6-Qm-Ixf"/>
+        <segue reference="7zD-WF-dpK"/>
         <segue reference="oJa-KX-TUb"/>
     </inferredMetricsTieBreakers>
 </document>

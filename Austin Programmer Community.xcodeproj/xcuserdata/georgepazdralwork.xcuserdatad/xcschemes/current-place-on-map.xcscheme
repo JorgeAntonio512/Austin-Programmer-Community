@@ -17,7 +17,7 @@
                BlueprintIdentifier = "E50C79B61E4CFDE9008ECCEB"
                BuildableName = "Austin Tall Community.app"
                BlueprintName = "current-place-on-map"
-               ReferencedContainer = "container:current-place-on-map.xcodeproj">
+               ReferencedContainer = "container:Austin Programmer Community.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
             BlueprintIdentifier = "E50C79B61E4CFDE9008ECCEB"
             BuildableName = "Austin Tall Community.app"
             BlueprintName = "current-place-on-map"
-            ReferencedContainer = "container:current-place-on-map.xcodeproj">
+            ReferencedContainer = "container:Austin Programmer Community.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -58,7 +58,7 @@
             BlueprintIdentifier = "E50C79B61E4CFDE9008ECCEB"
             BuildableName = "Austin Tall Community.app"
             BlueprintName = "current-place-on-map"
-            ReferencedContainer = "container:current-place-on-map.xcodeproj">
+            ReferencedContainer = "container:Austin Programmer Community.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -77,7 +77,7 @@
             BlueprintIdentifier = "E50C79B61E4CFDE9008ECCEB"
             BuildableName = "Austin Tall Community.app"
             BlueprintName = "current-place-on-map"
-            ReferencedContainer = "container:current-place-on-map.xcodeproj">
+            ReferencedContainer = "container:Austin Programmer Community.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

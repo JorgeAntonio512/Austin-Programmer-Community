@@ -27,13 +27,15 @@
 		3D3A4BB92073006F00BC146A /* NotificationsPermissionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3A4BB82073006F00BC146A /* NotificationsPermissionsViewController.swift */; };
 		3D3E69CE2002EFFD00BC251A /* CreateProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3E69CD2002EFFD00BC251A /* CreateProfileViewController.swift */; };
 		3D3E69D02003047800BC251A /* PeoplezProfilesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3E69CF2003047800BC251A /* PeoplezProfilesViewController.swift */; };
-		3D3F4FAF1FE357E4000C0F27 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D3F4FAE1FE357E4000C0F27 /* GoogleService-Info.plist */; };
+		3D449CC620FBFFEC003F92B7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D449CC520FBFFEC003F92B7 /* GoogleService-Info.plist */; };
+		3D449CC720FBFFEC003F92B7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D449CC520FBFFEC003F92B7 /* GoogleService-Info.plist */; };
 		3D4891C81FC107A5003ED366 /* SuggestionTotalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4891C71FC107A5003ED366 /* SuggestionTotalsViewController.swift */; };
 		3D4F69FF20AA54B1005F442B /* ArtworkViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4F69FE20AA54B1005F442B /* ArtworkViews.swift */; };
 		3D51D52B206AEE22004C357C /* TabBarMainMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D51D52A206AEE22004C357C /* TabBarMainMenuController.swift */; };
 		3D5B236D1FFEFC1B00E94FB4 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5B236C1FFEFC1B00E94FB4 /* MenuViewController.swift */; };
 		3D60735720A0EB3600701B44 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D60735620A0EB3600701B44 /* CustomTableViewCell.swift */; };
 		3D669E6A20F0F55300666779 /* PostPicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D669E6920F0F55300666779 /* PostPicViewController.swift */; };
+		3D66BBB720F6E0A60027B7FB /* FriendsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D66BBB620F6E0A60027B7FB /* FriendsListViewController.swift */; };
 		3D708F0C20C2BFEA005F0A04 /* PostImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D708F0B20C2BFEA005F0A04 /* PostImageCell.swift */; };
 		3D7199DA1FE6F95900BDDD4D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7199D91FE6F95900BDDD4D /* Constants.swift */; };
 		3D7199DD1FE6F9FD00BDDD4D /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7199DC1FE6F9FD00BDDD4D /* AuthService.swift */; };
@@ -92,13 +94,14 @@
 		3D3A4BB82073006F00BC146A /* NotificationsPermissionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsPermissionsViewController.swift; sourceTree = "<group>"; };
 		3D3E69CD2002EFFD00BC251A /* CreateProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfileViewController.swift; sourceTree = "<group>"; };
 		3D3E69CF2003047800BC251A /* PeoplezProfilesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeoplezProfilesViewController.swift; sourceTree = "<group>"; };
-		3D3F4FAE1FE357E4000C0F27 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3D449CC520FBFFEC003F92B7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3D4891C71FC107A5003ED366 /* SuggestionTotalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionTotalsViewController.swift; sourceTree = "<group>"; };
 		3D4F69FE20AA54B1005F442B /* ArtworkViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkViews.swift; sourceTree = "<group>"; };
 		3D51D52A206AEE22004C357C /* TabBarMainMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarMainMenuController.swift; sourceTree = "<group>"; };
 		3D5B236C1FFEFC1B00E94FB4 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		3D60735620A0EB3600701B44 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		3D669E6920F0F55300666779 /* PostPicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPicViewController.swift; sourceTree = "<group>"; };
+		3D66BBB620F6E0A60027B7FB /* FriendsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsListViewController.swift; sourceTree = "<group>"; };
 		3D708F0B20C2BFEA005F0A04 /* PostImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostImageCell.swift; sourceTree = "<group>"; };
 		3D7199D91FE6F95900BDDD4D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		3D7199DC1FE6F9FD00BDDD4D /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
@@ -240,7 +243,7 @@
 				E50C79BE1E4CFDE9008ECCEB /* Main.storyboard */,
 				E50C79C11E4CFDE9008ECCEB /* Assets.xcassets */,
 				E50C79C31E4CFDE9008ECCEB /* LaunchScreen.storyboard */,
-				3D3F4FAE1FE357E4000C0F27 /* GoogleService-Info.plist */,
+				3D449CC520FBFFEC003F92B7 /* GoogleService-Info.plist */,
 				E50C79C61E4CFDE9008ECCEB /* Info.plist */,
 				3D7199D91FE6F95900BDDD4D /* Constants.swift */,
 			);
@@ -281,6 +284,7 @@
 				3DF14C9120CDEA6B005258E1 /* PostPageViewController.swift */,
 				3DF14C9320CDF057005258E1 /* PostCell.swift */,
 				3D669E6920F0F55300666779 /* PostPicViewController.swift */,
+				3D66BBB620F6E0A60027B7FB /* FriendsListViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -354,7 +358,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E50C79B21E4CFDE9008ECCEB /* Build configuration list for PBXProject "current-place-on-map" */;
+			buildConfigurationList = E50C79B21E4CFDE9008ECCEB /* Build configuration list for PBXProject "Austin Programmer Community" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -378,6 +382,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D449CC720FBFFEC003F92B7 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,10 +392,10 @@
 			files = (
 				E50C79C51E4CFDE9008ECCEB /* LaunchScreen.storyboard in Resources */,
 				3D15C1EB200D829F00C09794 /* newMessage.wav in Resources */,
+				3D449CC620FBFFEC003F92B7 /* GoogleService-Info.plist in Resources */,
 				E50C79C21E4CFDE9008ECCEB /* Assets.xcassets in Resources */,
 				E50C79C01E4CFDE9008ECCEB /* Main.storyboard in Resources */,
 				3DF6431E1FC1DC6D0076C975 /* GoogleMaps.bundle in Resources */,
-				3D3F4FAF1FE357E4000C0F27 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -554,6 +559,7 @@
 				3D60735720A0EB3600701B44 /* CustomTableViewCell.swift in Sources */,
 				E50C79BB1E4CFDE9008ECCEB /* AppDelegate.swift in Sources */,
 				3D5B236D1FFEFC1B00E94FB4 /* MenuViewController.swift in Sources */,
+				3D66BBB720F6E0A60027B7FB /* FriendsListViewController.swift in Sources */,
 				3D3E69CE2002EFFD00BC251A /* CreateProfileViewController.swift in Sources */,
 				3D15C1E4200D806300C09794 /* Message.swift in Sources */,
 				3D15C1E5200D806300C09794 /* Conversation.swift in Sources */,
@@ -763,7 +769,7 @@
 				INFOPLIST_FILE = "current-place-on-map/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.george.austintallclub;
+				PRODUCT_BUNDLE_IDENTIFIER = com.george.austinprogrammercommunity;
 				PRODUCT_NAME = "Austin Tall Community";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -792,7 +798,7 @@
 				INFOPLIST_FILE = "current-place-on-map/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.george.austintallclub;
+				PRODUCT_BUNDLE_IDENTIFIER = com.george.austinprogrammercommunity;
 				PRODUCT_NAME = "Austin Tall Community";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -815,7 +821,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E50C79B21E4CFDE9008ECCEB /* Build configuration list for PBXProject "current-place-on-map" */ = {
+		E50C79B21E4CFDE9008ECCEB /* Build configuration list for PBXProject "Austin Programmer Community" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E50C79C71E4CFDE9008ECCEB /* Debug */,
