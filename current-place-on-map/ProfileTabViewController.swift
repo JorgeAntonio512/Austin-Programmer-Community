@@ -23,7 +23,7 @@ class ProfileTabViewController: UIViewController, WKUIDelegate, WKNavigationDele
         let backButton = UIBarButtonItem.init(image: icon!, style: .plain, target: self, action: #selector(self.dismissSelf))
         self.navigationItem.leftBarButtonItem = backButton
         
-        self.navigationItem.title = "Austin Tall Community"
+        self.navigationItem.title = "Austin Programmer Community"
     }
     override func viewDidAppear(_ animated: Bool) {
         

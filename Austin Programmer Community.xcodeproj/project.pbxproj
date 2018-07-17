@@ -22,14 +22,12 @@
 		3D2CA9B6200C4477002B28A3 /* ConversationsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2CA9B5200C4477002B28A3 /* ConversationsVC.swift */; };
 		3D2CA9B8200C4491002B28A3 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2CA9B7200C4491002B28A3 /* FriendsViewController.swift */; };
 		3D2CD1252036723000B4F0D5 /* Austin_Tall_CommunityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2CD1242036723000B4F0D5 /* Austin_Tall_CommunityTests.swift */; };
-		3D2D21081FC0F275009370B4 /* MeetupSuggestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2D21071FC0F275009370B4 /* MeetupSuggestionsViewController.swift */; };
 		3D3232832001800F008C6475 /* ProfileEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3232822001800F008C6475 /* ProfileEditViewController.swift */; };
 		3D3A4BB92073006F00BC146A /* NotificationsPermissionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3A4BB82073006F00BC146A /* NotificationsPermissionsViewController.swift */; };
 		3D3E69CE2002EFFD00BC251A /* CreateProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3E69CD2002EFFD00BC251A /* CreateProfileViewController.swift */; };
 		3D3E69D02003047800BC251A /* PeoplezProfilesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3E69CF2003047800BC251A /* PeoplezProfilesViewController.swift */; };
 		3D449CC620FBFFEC003F92B7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D449CC520FBFFEC003F92B7 /* GoogleService-Info.plist */; };
 		3D449CC720FBFFEC003F92B7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D449CC520FBFFEC003F92B7 /* GoogleService-Info.plist */; };
-		3D4891C81FC107A5003ED366 /* SuggestionTotalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4891C71FC107A5003ED366 /* SuggestionTotalsViewController.swift */; };
 		3D4F69FF20AA54B1005F442B /* ArtworkViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4F69FE20AA54B1005F442B /* ArtworkViews.swift */; };
 		3D51D52B206AEE22004C357C /* TabBarMainMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D51D52A206AEE22004C357C /* TabBarMainMenuController.swift */; };
 		3D5B236D1FFEFC1B00E94FB4 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5B236C1FFEFC1B00E94FB4 /* MenuViewController.swift */; };
@@ -89,13 +87,11 @@
 		3D2CD1222036723000B4F0D5 /* Austin Tall CommunityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Austin Tall CommunityTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D2CD1242036723000B4F0D5 /* Austin_Tall_CommunityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Austin_Tall_CommunityTests.swift; sourceTree = "<group>"; };
 		3D2CD1262036723000B4F0D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3D2D21071FC0F275009370B4 /* MeetupSuggestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetupSuggestionsViewController.swift; sourceTree = "<group>"; };
 		3D3232822001800F008C6475 /* ProfileEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditViewController.swift; sourceTree = "<group>"; };
 		3D3A4BB82073006F00BC146A /* NotificationsPermissionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsPermissionsViewController.swift; sourceTree = "<group>"; };
 		3D3E69CD2002EFFD00BC251A /* CreateProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfileViewController.swift; sourceTree = "<group>"; };
 		3D3E69CF2003047800BC251A /* PeoplezProfilesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeoplezProfilesViewController.swift; sourceTree = "<group>"; };
 		3D449CC520FBFFEC003F92B7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		3D4891C71FC107A5003ED366 /* SuggestionTotalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionTotalsViewController.swift; sourceTree = "<group>"; };
 		3D4F69FE20AA54B1005F442B /* ArtworkViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkViews.swift; sourceTree = "<group>"; };
 		3D51D52A206AEE22004C357C /* TabBarMainMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarMainMenuController.swift; sourceTree = "<group>"; };
 		3D5B236C1FFEFC1B00E94FB4 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
@@ -254,8 +250,6 @@
 			isa = PBXGroup;
 			children = (
 				3D1E3BCD1FC3A726001D1BF4 /* LoginViewController.swift */,
-				3D2D21071FC0F275009370B4 /* MeetupSuggestionsViewController.swift */,
-				3D4891C71FC107A5003ED366 /* SuggestionTotalsViewController.swift */,
 				3DA699691FEC38A900E8BDD7 /* SearchViewController.swift */,
 				3D5B236C1FFEFC1B00E94FB4 /* MenuViewController.swift */,
 				3D29170D1FFF17AC00862BAB /* ProfileTableViewController.swift */,
@@ -539,7 +533,6 @@
 				3D2CA9B6200C4477002B28A3 /* ConversationsVC.swift in Sources */,
 				3DF14C9220CDEA6B005258E1 /* PostPageViewController.swift in Sources */,
 				3DC8CCA620C9DF7B00361C93 /* DonateViewController.swift in Sources */,
-				3D2D21081FC0F275009370B4 /* MeetupSuggestionsViewController.swift in Sources */,
 				3D81376920A7AD39005EF841 /* Artwork.swift in Sources */,
 				3D26BB68206B0C7900F5C711 /* ProfileTabViewController.swift in Sources */,
 				3DD032FE200E3D26008B5887 /* NavVC.swift in Sources */,
@@ -552,7 +545,6 @@
 				3D15C1E6200D806300C09794 /* User.swift in Sources */,
 				3D669E6A20F0F55300666779 /* PostPicViewController.swift in Sources */,
 				3DCD51362055C9EA00C13A2D /* CreatePostViewController.swift in Sources */,
-				3D4891C81FC107A5003ED366 /* SuggestionTotalsViewController.swift in Sources */,
 				3D2CA9B8200C4491002B28A3 /* FriendsViewController.swift in Sources */,
 				3DA6996A1FEC38A900E8BDD7 /* SearchViewController.swift in Sources */,
 				3D4F69FF20AA54B1005F442B /* ArtworkViews.swift in Sources */,

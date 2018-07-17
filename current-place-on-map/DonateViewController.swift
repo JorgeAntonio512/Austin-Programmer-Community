@@ -21,23 +21,23 @@ If you've been enjoying this app and would like to show your support, please con
         
         static func subscriptionProductIdentifier(for row: SubscriptionRow) -> String {
             switch row {
-            case .monthly: return "1"
-            case .yearly: return "2"
+            case .monthly: return "1z"
+            case .yearly: return "2z"
             }
         }
         
         static func oneTimeProductIdentifier(for row: OneTimeRow) -> String {
             switch row {
-            case .small: return "spare"
-            case .medium: return "2_Buck"
-            case .large: return "Fiver"
-            case .huge: return "Hammy"
-            case .massive: return "Moo"
+            case .small: return "sparez"
+            case .medium: return "2_Buckz"
+            case .large: return "Fiverz"
+            case .huge: return "Hammyz"
+            case .massive: return "Mooz"
             }
         }
         
-        static var termsOfUseURLString = "http://austintallcommunityapp.blogspot.com/p/terms-of-use.html"
-        static var privacyPolicyURLString = "http://austintallcommunityapp.blogspot.com/p/privacy-policy.html"
+        static var termsOfUseURLString = "http://austinprogrammercommunity.blogspot.com/p/terms-of-use.html"
+        static var privacyPolicyURLString = "http://austinprogrammercommunity.blogspot.com/p/privacy-policy.html"
     }
 
     
@@ -52,7 +52,7 @@ If you've been enjoying this app and would like to show your support, please con
         let backButton = UIBarButtonItem.init(image: icon!, style: .plain, target: self, action: #selector(self.dismissSelf))
         self.navigationItem.leftBarButtonItem = backButton
         
-        self.navigationItem.title = "Austin Tall Community"
+        self.navigationItem.title = "Austin Programmer Community"
     }
     
     

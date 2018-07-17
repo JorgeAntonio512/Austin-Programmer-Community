@@ -182,7 +182,7 @@ class ProfileEditViewController: UITableViewController {
         let backButton = UIBarButtonItem.init(image: icon!, style: .plain, target: self, action: #selector(self.dismissSelf))
         self.navigationItem.leftBarButtonItem = backButton
         
-        self.navigationItem.title = "Austin Tall Community"
+        self.navigationItem.title = "Austin Programmer Community"
         
         self.hideKeyboard()
         

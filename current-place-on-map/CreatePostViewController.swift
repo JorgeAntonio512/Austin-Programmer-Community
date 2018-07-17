@@ -25,7 +25,7 @@ class CreatePostViewController: UIViewController {
         let backButton = UIBarButtonItem.init(image: icon!, style: .plain, target: self, action: #selector(self.dismissSelf))
         self.navigationItem.leftBarButtonItem = backButton
         
-        self.navigationItem.title = "Austin Tall Community"
+        self.navigationItem.title = "Austin Programmer Community"
         
         let keyChain = DataService().keyChain
         if keyChain.get("uid") != nil {

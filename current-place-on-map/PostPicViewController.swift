@@ -22,7 +22,7 @@ class PostPicViewController: UIViewController, UIScrollViewDelegate, UIImagePick
         let backButton = UIBarButtonItem.init(image: icon!, style: .plain, target: self, action: #selector(self.dismissSelf))
         self.navigationItem.leftBarButtonItem = backButton
         
-        self.navigationItem.title = "Austin Tall Community"
+        self.navigationItem.title = "Austin Programmer Community"
         
         let url = URL(string: postPic!)
         let imagur = #imageLiteral(resourceName: "notthere")
