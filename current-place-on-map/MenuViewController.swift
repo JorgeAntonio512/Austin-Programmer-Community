@@ -44,7 +44,7 @@ class MenuViewController: UITableViewController {
     
     /* will be called when tapping on the label */
     @objc func tapAction() -> Void {
-        UIApplication.shared.open(URL(string: "mailto:austintallcommunity@gmail.com")! as URL, options: [:], completionHandler: nil)
+        UIApplication.shared.open(URL(string: "mailto:austinprogrammercommunity512@gmail.com")! as URL, options: [:], completionHandler: nil)
     }
     @objc func tapActionz() -> Void {
         //here I want to execute the UIActionSheet

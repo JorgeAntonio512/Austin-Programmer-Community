@@ -111,7 +111,7 @@ class FriendsViewController: UITableViewController {
         
         
         cell.textLabel?.text = userDict["name"] as? String
-        cell.detailTextLabel?.text = userDict["height"] as? String
+        cell.detailTextLabel?.text = userDict["city"] as? String
         //cell.textLabel?.text = self.filteredCakes[indexPath.row].name
         //cell.detailTextLabel?.text = self.filteredCakes[indexPath.row].height
         

@@ -45,9 +45,7 @@ class PeoplezProfilesViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         name.text = value
-        relstatus.text = relVal
         gender.text = genVal
-        height.text = heightVal
         zip.text = zipVal
         about.text = aboutVal
        
@@ -97,15 +95,15 @@ class PeoplezProfilesViewController: UITableViewController {
         toplineView1.layer.borderColor = UIColor.lightGray.cgColor
         self.genderCell.addSubview(toplineView1)
         
-        let toplineView2 = UIView(frame: CGRect(x: 0, y: 0, width: self.view.bounds.size.width, height: 1.0))
-        toplineView2.layer.borderWidth = 1.0
-        toplineView2.layer.borderColor = UIColor.lightGray.cgColor
-        self.heightCell.addSubview(toplineView2)
-        
-        let toplineView3 = UIView(frame: CGRect(x: 0, y: 0, width: self.view.bounds.size.width, height: 1.0))
-        toplineView3.layer.borderWidth = 1.0
-        toplineView3.layer.borderColor = UIColor.lightGray.cgColor
-        self.relCell.addSubview(toplineView3)
+//        let toplineView2 = UIView(frame: CGRect(x: 0, y: 0, width: self.view.bounds.size.width, height: 1.0))
+//        toplineView2.layer.borderWidth = 1.0
+//        toplineView2.layer.borderColor = UIColor.lightGray.cgColor
+//        self.heightCell.addSubview(toplineView2)
+//
+//        let toplineView3 = UIView(frame: CGRect(x: 0, y: 0, width: self.view.bounds.size.width, height: 1.0))
+//        toplineView3.layer.borderWidth = 1.0
+//        toplineView3.layer.borderColor = UIColor.lightGray.cgColor
+//        self.relCell.addSubview(toplineView3)
         
         
         let toplineView4 = UIView(frame: CGRect(x: 0, y: 0, width: self.view.bounds.size.width, height: 1.0))
@@ -125,17 +123,22 @@ class PeoplezProfilesViewController: UITableViewController {
         bottomlineView.layer.borderWidth = 1.0
         bottomlineView.layer.borderColor = UIColor.lightGray.cgColor
         self.nameCell.addSubview(bottomlineView)
-
         
-        let bottomlineView2 = UIView(frame: CGRect(x: 0, y: self.heightCell.bounds.size.height-1, width: self.view.bounds.size.width, height: 1.0))
+        let bottomlineView2 = UIView(frame: CGRect(x: 0, y: self.nameCell.bounds.size.height-1, width: self.view.bounds.size.width, height: 1.0))
         bottomlineView2.layer.borderWidth = 1.0
         bottomlineView2.layer.borderColor = UIColor.lightGray.cgColor
-    self.heightCell.addSubview(bottomlineView2)
-        
-        let bottomlineView3 = UIView(frame: CGRect(x: 0, y: self.relCell.bounds.size.height-1, width: self.view.bounds.size.width, height: 1.0))
-        bottomlineView3.layer.borderWidth = 1.0
-        bottomlineView3.layer.borderColor = UIColor.lightGray.cgColor
-        self.relCell.addSubview(bottomlineView3)
+        self.genderCell.addSubview(bottomlineView2)
+
+//
+//        let bottomlineView2 = UIView(frame: CGRect(x: 0, y: self.heightCell.bounds.size.height-1, width: self.view.bounds.size.width, height: 1.0))
+//        bottomlineView2.layer.borderWidth = 1.0
+//        bottomlineView2.layer.borderColor = UIColor.lightGray.cgColor
+//    self.heightCell.addSubview(bottomlineView2)
+//
+//        let bottomlineView3 = UIView(frame: CGRect(x: 0, y: self.relCell.bounds.size.height-1, width: self.view.bounds.size.width, height: 1.0))
+//        bottomlineView3.layer.borderWidth = 1.0
+//        bottomlineView3.layer.borderColor = UIColor.lightGray.cgColor
+//        self.relCell.addSubview(bottomlineView3)
         
         
         let bottomlineView4 = UIView(frame: CGRect(x: 0, y: self.zipCell.bounds.size.height-1, width: self.view.bounds.size.width, height: 1.0))

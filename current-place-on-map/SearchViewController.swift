@@ -147,7 +147,7 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         
         cell.textLabel?.text = userDict["name"] as? String
-        cell.detailTextLabel?.text = userDict["height"] as? String
+        cell.detailTextLabel?.text = userDict["city"] as? String
     
         
         return cell
@@ -175,7 +175,7 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
                 // Data for "images/island.jpg" is returned
                 let image = UIImage(data: data!)
             
-                let user = User.init(name: self.yourValue as! String, email: self.yourHeight as! String, id: self.keyzy!, profilePic: image!)
+                let user = User.init(name: self.yourValue as! String, email: self.yourZip as! String, id: self.keyzy!, profilePic: image!)
                 self.selectedUser = user
         self.performSegue(withIdentifier: "toPeoplesProfiles", sender: self)
       
@@ -191,9 +191,7 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         if(segue.identifier == "toPeoplesProfiles") {
             let vc = segue.destination as! PeoplezProfilesViewController
             vc.value = yourValue!
-            vc.relVal = yourRelStatus!
             vc.genVal = yourGender!
-            vc.heightVal = yourHeight!
             vc.zipVal = yourZip!
             vc.aboutVal = yourAbout!
             vc.proPicVal = yourProPic!

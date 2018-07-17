@@ -59,15 +59,15 @@ class ProfileTableViewController: UITableViewController {
         toplineView1.layer.borderColor = UIColor.lightGray.cgColor
         self.genderCell.addSubview(toplineView1)
         
-        let toplineView2 = UIView(frame: CGRect(x: 0, y: 0, width: self.view.bounds.size.width, height: 1.0))
-        toplineView2.layer.borderWidth = 1.0
-        toplineView2.layer.borderColor = UIColor.lightGray.cgColor
-        self.heightCell.addSubview(toplineView2)
-        
-        let toplineView3 = UIView(frame: CGRect(x: 0, y: 0, width: self.view.bounds.size.width, height: 1.0))
-        toplineView3.layer.borderWidth = 1.0
-        toplineView3.layer.borderColor = UIColor.lightGray.cgColor
-        self.relCell.addSubview(toplineView3)
+//        let toplineView2 = UIView(frame: CGRect(x: 0, y: 0, width: self.view.bounds.size.width, height: 1.0))
+//        toplineView2.layer.borderWidth = 1.0
+//        toplineView2.layer.borderColor = UIColor.lightGray.cgColor
+//        self.heightCell.addSubview(toplineView2)
+//
+//        let toplineView3 = UIView(frame: CGRect(x: 0, y: 0, width: self.view.bounds.size.width, height: 1.0))
+//        toplineView3.layer.borderWidth = 1.0
+//        toplineView3.layer.borderColor = UIColor.lightGray.cgColor
+//        self.relCell.addSubview(toplineView3)
         
         
         let toplineView4 = UIView(frame: CGRect(x: 0, y: 0, width: self.view.bounds.size.width, height: 1.0))
@@ -93,16 +93,21 @@ class ProfileTableViewController: UITableViewController {
         bottomlineView.layer.borderColor = UIColor.lightGray.cgColor
         self.nameCell.addSubview(bottomlineView)
         
-        
-        let bottomlineView2 = UIView(frame: CGRect(x: 0, y: self.heightCell.bounds.size.height-1, width: self.view.bounds.size.width, height: 1.0))
+        let bottomlineView2 = UIView(frame: CGRect(x: 0, y: self.nameCell.bounds.size.height-1, width: self.view.bounds.size.width, height: 1.0))
         bottomlineView2.layer.borderWidth = 1.0
         bottomlineView2.layer.borderColor = UIColor.lightGray.cgColor
-        self.heightCell.addSubview(bottomlineView2)
+        self.genderCell.addSubview(bottomlineView2)
         
-        let bottomlineView3 = UIView(frame: CGRect(x: 0, y: self.relCell.bounds.size.height-1, width: self.view.bounds.size.width, height: 1.0))
-        bottomlineView3.layer.borderWidth = 1.0
-        bottomlineView3.layer.borderColor = UIColor.lightGray.cgColor
-        self.relCell.addSubview(bottomlineView3)
+        
+//        let bottomlineView2 = UIView(frame: CGRect(x: 0, y: self.heightCell.bounds.size.height-1, width: self.view.bounds.size.width, height: 1.0))
+//        bottomlineView2.layer.borderWidth = 1.0
+//        bottomlineView2.layer.borderColor = UIColor.lightGray.cgColor
+//        self.heightCell.addSubview(bottomlineView2)
+//
+//        let bottomlineView3 = UIView(frame: CGRect(x: 0, y: self.relCell.bounds.size.height-1, width: self.view.bounds.size.width, height: 1.0))
+//        bottomlineView3.layer.borderWidth = 1.0
+//        bottomlineView3.layer.borderColor = UIColor.lightGray.cgColor
+//        self.relCell.addSubview(bottomlineView3)
         
         
         let bottomlineView4 = UIView(frame: CGRect(x: 0, y: self.zipCell.bounds.size.height-1, width: self.view.bounds.size.width, height: 1.0))
@@ -143,11 +148,7 @@ class ProfileTableViewController: UITableViewController {
                 self.gender.text = (snap.value as AnyObject).description
             }
             
-            let FirebaseMessageRef2 = Database.database().reference().child("users/\(FirebaseUid!)/height")
-            //Write value from Firebase database to the label:
-            FirebaseMessageRef2.observe(.value) { (snap: DataSnapshot) in
-                self.height.text = (snap.value as AnyObject).description
-            }
+           
             let FirebaseMessageRef3 = Database.database().reference().child("users/\(FirebaseUid!)/city")
          
             let FirebaseMessageRef4 = Database.database().reference().child("users/\(FirebaseUid!)/about")
@@ -158,11 +159,7 @@ class ProfileTableViewController: UITableViewController {
             FirebaseMessageRef4.observe(.value) { (snap: DataSnapshot) in
                 self.about.text = (snap.value as AnyObject).description
             }
-            let FirebaseMessageRef5 = Database.database().reference().child("users/\(FirebaseUid!)/status")
-            //Write value from Firebase database to the label:
-            FirebaseMessageRef5.observe(.value) { (snap: DataSnapshot) in
-                self.status.text = (snap.value as AnyObject).description
-            }
+        
             // Create a storage reference from the URL
             let uid = FirebaseUid
             
