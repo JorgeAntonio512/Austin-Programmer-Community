@@ -138,7 +138,7 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
                 
                 FirebaseMessageRef.observeSingleEvent(of: .value, with: { (snapshot) in
                     
-                    if snapshot.hasChild("height"){
+                    if snapshot.hasChild("name"){
                         self.performSegue(withIdentifier: "HasProfile", sender: nil)
                         print("height exist!")
                         
@@ -177,7 +177,7 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
             
             FirebaseMessageRef.observeSingleEvent(of: .value, with: { (snapshot) in
                 
-                if snapshot.hasChild("height"){
+                if snapshot.hasChild("name"){
                     self.performSegue(withIdentifier: "HasProfile", sender: nil)
                     print("height exist!")
                     
@@ -383,7 +383,7 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
                         
                         FirebaseMessageRef.observeSingleEvent(of: .value, with: { (snapshot) in
                             
-                            if snapshot.hasChild("height"){
+                            if snapshot.hasChild("name"){
                                 self.performSegue(withIdentifier: "HasProfile", sender: nil)
                                 print("height exist!")
                                 

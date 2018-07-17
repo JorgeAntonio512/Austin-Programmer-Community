@@ -153,15 +153,15 @@ class CreateProfileViewController: UITableViewController {
         toplineView1.layer.borderColor = UIColor.lightGray.cgColor
         self.genderCell.addSubview(toplineView1)
         
-        let toplineView2 = UIView(frame: CGRect(x: 0, y: 0, width: self.view.bounds.size.width, height: 1.0))
-        toplineView2.layer.borderWidth = 1.0
-        toplineView2.layer.borderColor = UIColor.lightGray.cgColor
-        self.heightCell.addSubview(toplineView2)
+//        let toplineView2 = UIView(frame: CGRect(x: 0, y: 0, width: self.view.bounds.size.width, height: 1.0))
+//        toplineView2.layer.borderWidth = 1.0
+//        toplineView2.layer.borderColor = UIColor.lightGray.cgColor
+//        self.heightCell.addSubview(toplineView2)
         
-        let toplineView3 = UIView(frame: CGRect(x: 0, y: 0, width: self.view.bounds.size.width, height: 1.0))
-        toplineView3.layer.borderWidth = 1.0
-        toplineView3.layer.borderColor = UIColor.lightGray.cgColor
-        self.relCell.addSubview(toplineView3)
+//        let toplineView3 = UIView(frame: CGRect(x: 0, y: 0, width: self.view.bounds.size.width, height: 1.0))
+//        toplineView3.layer.borderWidth = 1.0
+//        toplineView3.layer.borderColor = UIColor.lightGray.cgColor
+//        self.relCell.addSubview(toplineView3)
         
         
         let toplineView4 = UIView(frame: CGRect(x: 0, y: 0, width: self.view.bounds.size.width, height: 1.0))
@@ -188,15 +188,15 @@ class CreateProfileViewController: UITableViewController {
         self.nameCell.addSubview(bottomlineView)
         
         
-        let bottomlineView2 = UIView(frame: CGRect(x: 0, y: self.heightCell.bounds.size.height-1, width: self.view.bounds.size.width, height: 1.0))
-        bottomlineView2.layer.borderWidth = 1.0
-        bottomlineView2.layer.borderColor = UIColor.lightGray.cgColor
-        self.heightCell.addSubview(bottomlineView2)
-        
-        let bottomlineView3 = UIView(frame: CGRect(x: 0, y: self.relCell.bounds.size.height-1, width: self.view.bounds.size.width, height: 1.0))
-        bottomlineView3.layer.borderWidth = 1.0
-        bottomlineView3.layer.borderColor = UIColor.lightGray.cgColor
-        self.relCell.addSubview(bottomlineView3)
+//        let bottomlineView2 = UIView(frame: CGRect(x: 0, y: self.heightCell.bounds.size.height-1, width: self.view.bounds.size.width, height: 1.0))
+//        bottomlineView2.layer.borderWidth = 1.0
+//        bottomlineView2.layer.borderColor = UIColor.lightGray.cgColor
+//        self.heightCell.addSubview(bottomlineView2)
+//
+//        let bottomlineView3 = UIView(frame: CGRect(x: 0, y: self.relCell.bounds.size.height-1, width: self.view.bounds.size.width, height: 1.0))
+//        bottomlineView3.layer.borderWidth = 1.0
+//        bottomlineView3.layer.borderColor = UIColor.lightGray.cgColor
+//        self.relCell.addSubview(bottomlineView3)
         
         
         let bottomlineView4 = UIView(frame: CGRect(x: 0, y: self.zipCell.bounds.size.height-1, width: self.view.bounds.size.width, height: 1.0))
@@ -269,14 +269,7 @@ class CreateProfileViewController: UITableViewController {
             alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default,handler: nil))
             
             self.present(alertController, animated: true, completion: nil)
-        } else {
-            if height.currentTitle == "click to select" {
-                let alertController = UIAlertController(title: "Height not selected!", message:
-                    "Please choose your height!", preferredStyle: UIAlertControllerStyle.alert)
-                alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default,handler: nil))
-                
-                self.present(alertController, animated: true, completion: nil)
-            } else {
+        }  else {
                 if name.text?.isEmpty ?? true {
                     let alertController = UIAlertController(title: "Name not input!", message:
                         "Please input your name!", preferredStyle: UIAlertControllerStyle.alert)
@@ -301,14 +294,7 @@ class CreateProfileViewController: UITableViewController {
                             
                             self.present(alertController, animated: true, completion: nil)
                             
-                        } else {
-                            if status.currentTitle == "click to select" {
-                                let alertController = UIAlertController(title: "You haven't choosen a relationship status!", message:
-                                    "Please choose a relationship status!", preferredStyle: UIAlertControllerStyle.alert)
-                                alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default,handler: nil))
-                                
-                                self.present(alertController, animated: true, completion: nil)
-                            }
+                        }
                             else {
                                 if let profileImage = self.selectedProfilePhoto, let imageData = UIImageJPEGRepresentation(profileImage, 0.1) {let alert = UIAlertController(title: nil, message: "Please wait...", preferredStyle: .alert)
                                     
@@ -320,14 +306,10 @@ class CreateProfileViewController: UITableViewController {
                                     alert.view.addSubview(loadingIndicator)
                                     present(alert, animated: true, completion: nil)
                                     AuthService.signUp(imageData: imageData, onSuccess: {
-                                    let string1 = self.height.currentTitle!
-                                    let string2 = string1.replacingOccurrences(of: "\\", with: "")
-                                    self.writeHeightInFirebase(height: string2)
                                     self.writeFeelingInFirebase(gender: self.gender.currentTitle!)
                                     self.writeCityInFirebase(city: self.city.text!)
                                     self.writeNameInFirebase(name: self.name.text!)
                                     self.writeAboutInFirebase(about: self.your.text!)
-                                    self.writeStatusInFirebase(status: self.status.currentTitle!)
                                     
                                         self.dismiss(animated: false, completion: nil)
                                         loadingIndicator.stopAnimating()
@@ -351,8 +333,7 @@ class CreateProfileViewController: UITableViewController {
                 }
             }
         }
-    }
-}
+
 // MARK: - ImagePicker Delegate Methods
 
 

@@ -100,7 +100,7 @@ class User: NSObject {
     Database.database().reference().child("users").child(forUserID).observeSingleEvent(of: .value, with: { (snapshot) in
             if let data = snapshot.value as? [String: AnyObject] {
                 let name = data["name"]!
-                let email = data["height"]!
+                let email = data["city"]!
                 let link = URL.init(string: data["profileImageURL"]! as! String)
                 URLSession.shared.dataTask(with: link!, completionHandler: { (data, response, error) in
                     if error == nil {
@@ -120,7 +120,7 @@ class User: NSObject {
             //let credentials = data["credentials"] as! [String: String]
             if id != exceptID {
                 let name = data["name"]!
-                let email = data["height"]!
+                let email = data["city"]!
                 let link = URL.init(string: data["profileImageURL"]! as! String)
                 URLSession.shared.dataTask(with: link!, completionHandler: { (data, response, error) in
                     if error == nil {
